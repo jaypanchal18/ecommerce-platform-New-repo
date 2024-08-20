@@ -1,0 +1,135 @@
+
+
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #726363;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .product-card-body {
+    padding: 15px;
+  }
+  
+  .product-card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .product-card-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .product-card-rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .product-card-rating span {
+    margin-left: 5px;
+    color: #ffc107;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .product-card {
+      margin-bottom: 15px;
+    }
+  
+    .product-card img {
+      height: 200px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .product-card {
+      margin-bottom: 10px;
+    }
+  
+    .product-card img {
+      height: 150px;
+    }
+  }
+
+
+
+
+  .filter-sidebar {
+    width: 100%;
+    max-width: 250px; /* Adjust as needed */
+  }
+  
+  .filter-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .filter-section {
+    margin-bottom: 1rem;
+  }
+  
+  .filter-header {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .filter-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .filter-item {
+    margin-bottom: 0.5rem;
+  }
+  
+  .filter-label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-label input {
+    margin-right: 0.5rem;
+  }
+  
+  .filter-price {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .filter-price label {
+    flex: 1;
+  }
+  
+  .filter-price input {
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .filter-sidebar {
+      max-width: 100%;
+    }
+  }
+  

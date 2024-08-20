@@ -79,7 +79,7 @@ function ProductScreen({ match, history }) {
 
   return (
     <div>
-      <Link to="/home" className="btn btn-light my-3">
+      <Link to="/" className="btn btn-light my-3">
         Go Back
       </Link>
 

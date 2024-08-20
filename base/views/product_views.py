@@ -9,13 +9,11 @@ from rest_framework.mixins import ListModelMixin, RetrieveModelMixin
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated, IsAdminUser, AllowAny
 from rest_framework.response import Response
-from rest_framework import status
+from rest_framework import status,generics
 from rest_framework import viewsets
 # Local Imports
-from base.models import Product, Review
+from base.models import Product
 from base.serializers import ProductSerializer
-
-# Brand and Category ViewSets
 
 
 
@@ -85,13 +83,13 @@ def updateProduct(request, pk):
     data = request.data
 
     product.name = data.get("name", product.name)
-    product.price = data.get("price", product.price)
-    product.brand = data.get("brand", product.brand)
+    product.price = data.get("price", product.price)  
     product.countInStock = data.get("countInStock", product.countInStock)
-    product.category = data.get("category", product.category)
     product.description = data.get("description", product.description)
 
     product.save()
+
+    
 
     serializer = ProductSerializer(product, many=False)
     return Response(serializer.data)

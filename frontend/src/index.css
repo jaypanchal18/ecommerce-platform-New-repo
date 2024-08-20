@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* App.js */
 main {
   min-height: 80vh;
@@ -66,3 +67,5 @@ h2 {
     color: white;
   }
 }
+
+

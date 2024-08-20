@@ -17,5 +17,6 @@ urlpatterns = [
     path('<str:pk>/', views.getProduct, name="product"),
     path('update/<str:pk>/', views.updateProduct, name="update_product"),
     path('delete/<str:pk>/', views.deleteProduct, name="delete_product"),
+    
     path('', include(router.urls)),
 ]

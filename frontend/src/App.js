@@ -20,7 +20,14 @@ import ProductListScreen from "./screens/ProductListScreen.jsx";
 import ProductEditScreen from "./screens/ProductEditScreen.jsx";
 import OrderListScreen from "./screens/OrderListScreen.jsx";
 
+
+import UserBehaviorScreen from './screens/UserBehaviorScreen';
+import InventoryManagementScreen from "./screens/InventoryManagementScreen";
+import CustomReportsScreen from "./screens/CustomReportsScreen";
+
+
 import IntroScreen from './screens/IntroScreen.jsx';
+
 /* REACT ROUTER */
 import { HashRouter as Router, Route } from "react-router-dom";
 
@@ -63,6 +70,12 @@ function App() {
           <Route path="/admin/productlist" component={ProductListScreen} />
 
           <Route path="/admin/orderlist" component={OrderListScreen} />
+
+          <Route path="/userbehavior" component={UserBehaviorScreen} />
+          <Route path="/inventory" component={InventoryManagementScreen} />
+          <Route path="/admin/reports" component={CustomReportsScreen} />
+
+
         </main>
       </Container>
       <Footer />
